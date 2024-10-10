@@ -1,9 +1,7 @@
 function anagram(t, s) {
   let count = 0;
-  t1 = t.trim()
-  t2 = s.trim()
-  for (let i = 0; i < t1.length; i++) {
-    for (let j = i; j < t2.length; j++) {
+  for (let i = 0; i < t.length; i++) {
+    for (let j = i; j < s.length; j++) {
       if (t1[i] == t2[j]) {
         count += 1;
       }
