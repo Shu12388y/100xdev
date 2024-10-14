@@ -1,0 +1,5 @@
+[
+  { "id": 1, "todo": "Go to GYM", "status": "Done" },
+  { "id": 1, "todo": "gotocollege", "status": "done" },
+  { "id": 1, "todo": "gotommovie", "status": "done" }
+]
