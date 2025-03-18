@@ -1,6 +1,6 @@
 // generating public and private keys
-
 import * as ed from "@noble/ed25519";
+
 
 async function main() {
   // Generate a secure random  private key
@@ -15,10 +15,9 @@ async function main() {
   // sign the message
   const sign = await ed.signAsync(message, privKey);
 
-    
   // verify the sign
   const isValidSign = await ed.verifyAsync(sign, message, pubKey );
-
+    
   console.log(isValidSign);
 }
 
