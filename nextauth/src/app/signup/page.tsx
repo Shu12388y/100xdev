@@ -1,7 +1,6 @@
-import { redirect } from "next/navigation";
 import React from "react";
 
-function Page() {
+async function Page() {
   return (
     <div>
       <form
@@ -10,11 +9,8 @@ function Page() {
           const name = await formData.get("username");
           const email = await formData.get("name");
           const password = await formData.get("password");
-          if (!name || !email || !password) {
-            alert("Every is requried");
-          }
-
-          redirect("/login");
+          console.log(name, email, password);
+          // redirect("/login");
         }}
       >
         <input type="text" name="username" />
