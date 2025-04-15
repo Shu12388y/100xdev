@@ -1,0 +1,17 @@
+## Persist the data
+
+
+### Create volume in docker
+`docker volume create volume_name`
+
+`docker run -p 27017:27107 -v volume_name:/data/db mongo`
+
+
+### Create network so that different docker container can talk to each other
+
+`docker network create network_name`
+`docker run --name mongo --network network_name -p 27017:27017 mongo`
+
+
+`docker run --network network_name -p 3001:3001 expressv1`
+`connection uri will be mongodb:containername:27017/database`
